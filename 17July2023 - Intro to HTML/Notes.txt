@@ -1,0 +1,104 @@
+HTML : 
+
+HTML is used to create static web pages. 
+
+HyperText Mark Language 
+
+Mark up Language: 
+
+It is a tag based Language where the UI / Content is represented using tags. 
+
+Tag: A tag is a keyword that is enclosed in angular brackets. 
+
+ex: <html>, <head>, <body> ...... 
+
+
+HTML is a collection of tags that provide an implementation of static web pages.
+
+<html>
+
+<head>
+
+    <!--  title  -->
+    <title>ECommerce - Web page</title>
+
+    <!-- favicon-->
+    <link rel="icon" type="image/png" href="./assets/images/logos/favicons/favicon.png">
+
+</head>
+
+<body>
+
+    <input type="text" placeholder="username here">
+
+    <input type="password" placeholder="password here">
+
+    <button>Login</button>
+
+    </body>
+
+    </html>
+
+
+1. How does a web browser reads html page and displays it on UI?
+
+
+The web browser takes the help of DOM (Document Object Model) and converts 
+the HTML Document into a tree. 
+
+All the html elements are converted as DOM Objects. 
+
+
+Live DOM Viewer:
+
+https://software.hixie.ch/utilities/js/live-dom-viewer/
+
+
+Sample code:
+
+
+<html>
+
+<head>
+
+    <!--  title  -->
+    <title>ECommerce - Web page</title>
+
+    <!-- favicon-->
+    <link rel="icon" type="image/png" href="./assets/images/logos/favicons/favicon.png">
+
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="username here">
+
+    <input type="password" id="password" placeholder="password here">
+
+    <button onclick="login()">Login</button>
+
+    <h1 id="message" style="color:red"></h1>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+
+            var password = document.getElementById("password").value;
+
+            if (username != "kiran") {
+
+                document.getElementById("message").innerHTML = "This username does not exist";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
