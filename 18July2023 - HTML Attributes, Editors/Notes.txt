@@ -1,0 +1,132 @@
+HTML Attributes:
+
+An Attribute is a key value pair that enhances the capability of a html element. 
+
+<input type="date">
+
+from the above, type attribute enhances the capability of input element. 
+
+We can categorize the html attributes into 3 types. 
+
+1. element specific attributes : 
+
+An attribute that can be used only with that specific element is known as element specific attribute. 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" placeholder="username here">
+
+    <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=70">
+
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+
+
+</body>
+
+</html>
+
+
+2. global attributes : 
+
+These attributes can be used with any html element. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" style="color:red; background-color: black" placeholder="enter username">
+
+    <a style="color:red; text-decoration: none; font-size: 90px" href="facebook">Facebook</a>
+
+</body>
+
+</html>
+
+
+Ref Link: https://www.w3schools.com/tags/ref_standardattributes.asp 
+
+
+3. event attributes: 
+
+Event attributes help in providing some functionality to the html components / elements. 
+
+Ref Link: https://www.w3schools.com/tags/ref_eventattributes.asp
+
+Problem Statement: 
+
+disable copy and paste operations on a text field. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" onpaste="return false" oncopy="return false" placeholder="enter account number" size="40">
+
+</body>
+
+</html>
+
+
+Some more examples:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="enter username">
+    <button onclick="capture()">Next</button>
+    <p onclick="capture()">Click Me</p>
+    <script>
+
+        function capture() {
+            alert("Capturing data!");
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+HTML Editors:  
+
+An Editor is a software that allows us to write some source code and save it in a file. 
+
+1.Notepad 
+2. Notepad++
+3. Sublime text
+4. Atom 
+5.Brackets
+6. Visual Studio Code :
+
+  *  It is from Microsoft.
+
+  *  free of use. 
+
+  * multiple features provided as part of the editor.
+
+
+
+
+
