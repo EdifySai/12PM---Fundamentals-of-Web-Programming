@@ -1,0 +1,303 @@
+HTML Headings: 
+
+HTML Headings ranges from h1 to h6 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+
+</body>
+
+</html>
+
+
+HTML Paragraphs:
+
+Tag: <p>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <p>Spring Boot is built on the top of the spring and contains all the features of spring. Spring also provides JPA
+        and hibernate to increase the data manipulation efficiency between the spring application and the database. In
+        very simple terms we can say JPA (Java persistence API) is like an interface and the hibernate is the
+        implementation of the methods of the interface Like how insertion will be down is already defined with the help
+        of hibernate. In this article, we will discuss the following most important and most used attributes of @Column
+        annotation with examples. </p>
+
+</body>
+
+</html>
+
+
+HTML Styles:
+
+HTML can support for inline and internal styles, external. 
+
+inline:   specific to that element , we use style attribute for it.
+
+
+  <h1 style="text-align: center; font-family: cursive">This is header 1</h1>
+
+Internal:
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            background-color: grey;
+            color: whitesmoke
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>This is header 1
+    </h1>
+    <h1>This is header 2
+    </h1>
+    <h1>This is header 3
+    </h1>
+
+</body>
+
+</html>
+
+
+external: 
+
+<link rel="stylesheet" href="style.css"> 
+
+
+HTML Comments: 
+
+HTML Comments are used to provide some additional information for the code readers. 
+
+Browser ignores the comments while rendering the html on the UI. 
+
+<html>
+
+<head>
+
+    <!-- Internal Style Sheet-->
+    <style>
+        h1,
+        p {
+            text-align: center;
+            font-family: cursive;
+            background-color: grey;
+            color: whitesmoke
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>This is header 1
+    </h1>
+    <h1>This is header 2
+    </h1>
+    <h1>This is header 3
+    </h1>
+    <p>This is a paragraph!</p>
+
+    <!-- Inline Style sheet-->
+    <h2 style="text-align: center">This another header h2</h2>
+</body>
+
+</html>
+
+HTML Blocks:
+
+HTML categorized the elements into 2 types.
+
+1. inline elements : An element that takes content level width and starts in the same line.
+
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    <input type="text" placeholder="username"> <a href="abc">Hello</a> <span style="background-color: yellow">This is
+        span</span>
+
+</body>
+
+</html>
+
+
+2. block level elements:An element that takes max width and always starts in a new line. 
+
+<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    <h1 style="background-color: red">Header</h1>
+
+    <h2>Header 2</h2>
+
+    <p>This is a paragraph!</p>
+
+     
+
+</body>
+
+</html>
+
+
+class: 
+
+class is a global attribute which can be applied to any html element.
+
+<html>
+
+<head>
+
+
+    <style>
+        .theme1 {
+            text-align: center;
+            color: whitesmoke;
+            background-color: grey;
+            font-family: cursive
+        }
+
+        .theme2 {
+            text-align: center;
+            color: grey;
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        .theme3 {
+            text-align: right;
+            color: orange;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+
+
+</head>
+
+<body class="theme3">
+
+    <h1>This is some content</h1>
+
+    <p>This some paragraph</p>
+
+    <input type="text" placeholder="OTP Here">
+
+</body>
+
+</html>
+
+id:  using id we can provide a unique identification to a html element. 
+
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+
+    <input type="text" id="username">
+
+    <button onclick="capture()">Submit</button>
+
+    <script>
+
+        function capture() {
+
+            document.getElementById("username").value = "Digital lync"
+            document.getElementById("username").style.color = "green"
+            document.getElementById("username").style.backgroundColor = "red"
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+    <img id="profile">
+    <script>
+        var imageURL1 = "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/6/v/0/c51-mzb0dxkin-poco-original-imagzdpycgrcdc8z.jpeg?q=70";
+        var imageURL2 = "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/w/d/o/-original-imaghgbyhy6banxv.jpeg?q=70";
+        var imageURL3 = "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/i/v/-original-imagfhu6bdzhnmkz.jpeg?q=70";
+        var imageURL4 = "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/4/h/e/-original-imagzjhwmsamexfk.jpeg?q=70";
+
+        document.getElementById("profile").src = imageURL4, m;
+
+    </script>
+
+</body>
+
+</html>
+
+
+HTML Tables:
+
+
+
+
+
+
+
+
+
+
+
+
