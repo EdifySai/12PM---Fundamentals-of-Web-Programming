@@ -1,0 +1,18 @@
+<html>
+<body>
+    <input id="pwd" type="password" placeholder="enter password">
+    <button onclick="showHide()">Show/Hide</button>
+    <script>
+        function showHide() {
+            var passwordType = document.getElementById("pwd").type;
+            if (passwordType == "password") {
+                document.getElementById("pwd").type = "text";
+            }
+            if (passwordType == "text") {
+                document.getElementById("pwd").type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

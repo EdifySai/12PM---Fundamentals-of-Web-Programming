@@ -1,0 +1,150 @@
+HTML Lists:
+
+To list a set of items on the UI, we have two types of lists. 
+
+1. Unordered List :
+
+tag: <ul>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <ul style="list-style-type: disc">
+        <li>Item 1</li>
+        <ul style="list-style-type: square">
+            <li>Item 1.1</li>
+            <li>Item 1.2</li>
+            <li>Item 1.3</li>
+            <li>Item 1.4</li>
+        </ul>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+</body>
+
+</html>
+
+
+2. Ordered List 
+
+tag: <ol>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <ol start="4">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create a quiz page using lists.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center">HTML Online Quiz</h1>
+    <hr>
+
+    <h2>Instructions</h2>
+
+    <ol>
+        <li>Total Number of Questions : 10</li>
+        <li>All Questions are MCQs</li>
+        <li>No Timer</li>
+        <li>No Negative Marks</li>
+        <li>Do not refresh the page until you submit the test</li>
+        <li>Check your internet connection back up before you take test</li>
+        <li>For any issues, contact #9010101010089</li>
+    </ol>
+
+    <hr>
+
+    <h3>Questions</h3>
+
+    <ol>
+        <li>What is HTML?</li>
+        <input name="q1" type="radio"> HyperText Medium Language <br>
+        <input name="q1" type="radio"> Hyper Medium Language<br>
+        <input name="q1" type="radio"> HyperText Max Language<br>
+        <input name="q1" type="radio"> HyperText Markup Language <br><br>
+
+        <li>Can we create dynamic web pages using HTML?</li>
+        <input type="radio"> Yes <br>
+        <input type="radio"> No<br> <br>
+
+        <li>Which is the latest version of HTML?</li>
+        <input type="radio"> HTML5 <br>
+        <input type="radio"> HTML6 <br>
+        <input type="radio"> HTML7 <br>
+        <input type="radio"> HTML8 <br><br>
+        <li>What is HTML?</li>
+        <input type="radio"> HyperText Medium Language <br>
+        <input type="radio"> Hyper Medium Language<br>
+        <input type="radio"> HyperText Max Language<br>
+        <input type="radio"> HyperText Markup Language <br><br>
+        <li>What is HTML?</li>
+        <input type="radio"> HyperText Medium Language <br>
+        <input type="radio"> Hyper Medium Language<br>
+        <input type="radio"> HyperText Max Language<br>
+        <input type="radio"> HyperText Markup Language <br><br>
+        <li>What is HTML?</li>
+        <input type="radio"> HyperText Medium Language <br>
+        <input type="radio"> Hyper Medium Language<br>
+        <input type="radio"> HyperText Max Language<br>
+        <input type="radio"> HyperText Markup Language <br><br>
+        <li>What is HTML?</li>
+        <input type="radio"> HyperText Medium Language <br>
+        <input type="radio"> Hyper Medium Language<br>
+        <input type="radio"> HyperText Max Language<br>
+        <input type="radio"> HyperText Markup Language <br><br>
+        <li>What is HTML?</li>
+        <input type="radio"> HyperText Medium Language <br>
+        <input type="radio"> Hyper Medium Language<br>
+        <input type="radio"> HyperText Max Language<br>
+        <input type="radio"> HyperText Markup Language <br><br>
+        <li>What is HTML?</li>
+        <input type="radio"> HyperText Medium Language <br>
+        <input type="radio"> Hyper Medium Language<br>
+        <input type="radio"> HyperText Max Language<br>
+        <input type="radio"> HyperText Markup Language <br><br>
+        <li>What is HTML?</li>
+        <input type="radio"> HyperText Medium Language <br>
+        <input type="radio"> Hyper Medium Language<br>
+        <input type="radio"> HyperText Max Language<br>
+        <input type="radio"> HyperText Markup Language <br><br>
+    </ol>
+    <button>Submit Test</button>
+</body>
+
+</html>
+
+HTML Forms:
+
+
+
