@@ -1,0 +1,55 @@
+
+HTML Images & paths: 
+
+tag:  <img>
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <img alt="something went wrong"
+        src="https://rukminim2.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70">
+
+    <img src="./images/logos/logo.jpeg">
+
+</body>
+
+</html>
+
+
+
+file paths: 
+
+There are 2 types of file paths.
+
+1. absolute  : Path from the base root (complete path)
+
+/Users/saikumar/Desktop/12pm-web/12PM---Fundamentals-of-Web-Programming/22July2023/images/logos/logo.jpeg
+
+2. relative  : path from the current directiory
+
+12PM---Fundamentals-of-Web-Programming/22July2023/images/logos/logo.jpeg
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <!-- relative path - recommended-->
+    <img src="./images/logos/logo.jpeg">
+    <!-- absolute path-->
+    <img
+        src="/Users/saikumar/Desktop/12pm-web/12PM---Fundamentals-of-Web-Programming/22July2023/images/logos/logo.jpeg">
+</body>
+
+</html>
+
+
