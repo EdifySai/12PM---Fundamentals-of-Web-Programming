@@ -1,0 +1,128 @@
+CSS:  Cascading Style Sheets
+
+CSS Selectors: 
+
+We can categorize CSS Selectors into 2 types.
+
+1. Basic Selectors:
+
+Simple selectors (select elements based on name, id, class)
+
+2. Advanced Selectors:
+
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+
+
+Basic Selectors:
+
+element selector :
+
+syntax: 
+   element_name{
+      property: value
+   }
+
+<html>
+
+<head>
+
+    <style>
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            color: red;
+            background-color: grey
+        }
+
+        h2 {
+            font-family: cursive
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>This is a header</h1>
+
+    <h2 style="font-size: 50px">This is another header</h2>
+
+    <h3> some other header</h3>
+
+</body>
+
+</html>
+
+
+id selector:
+
+syntax: 
+
+#id{
+     property:value
+}
+
+
+<html>
+
+<head>
+    <style>
+        #main,
+        h2 {
+            text-align: center;
+            color: grey
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main">This is a header</h1>
+    <h2 style="font-family: cursive">This is another header</h2>
+</body>
+
+</html>
+
+
+class selector:
+
+syntax:
+
+ .classname{
+     property: value
+ }
+
+
+ <html>
+
+<head>
+    <style>
+        .theme1 {
+            text-align: center;
+            color: red;
+
+        }
+
+        .cursive {
+            font-family: cursive
+        }
+
+        .background_color_yellow {
+            background-color: yellow
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="theme1 cursive background_color_yellow">Header 1</h1>
+</body>
+
+</html>
+
+
+
+
+
