@@ -1,0 +1,239 @@
+Inserting CSS into HTML(Inline, Internal,External)
+
+We can categorize css styles into 3 types. 
+
+1. Inline : Inline CSS can be applied at the element level using style attribute.
+
+ <h1 style="text-align: center">This is a header</h1>
+
+2. Internal  :
+
+
+<html>
+
+<head>
+
+    <!-- internal style sheet-->
+
+    <style>
+        h2 {
+            font-family: cursive;
+            text-align: center
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Inline Style Sheet-->
+    <h1 style="text-align: center">This is a header</h1>
+
+    <h2>Header 2</h2>
+    <h2>Header 2.1</h2>
+    <h2>Header 2.2</h2>
+    <h2>Header 2.3</h2>
+
+</body>
+
+</html>
+
+
+3. External :  used to provide css for multiple pages.
+
+style.css:
+
+h1 {
+            text-align: center;
+            color: whitesmoke;
+            background-color: grey;
+            font-family: cursive
+}
+
+page1.html:
+
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: right;
+            font-family: cursive
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Digital Lync Technologies</h1>
+    <h2>Page One</h2>
+</body>
+
+</html>
+
+
+page2.html:
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Digital Lync Technologies</h1>
+    <h2>Page Two</h2>
+</body>
+
+</html>
+
+
+page3.html:
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Digital Lync Technologies</h1>
+    <h2>Page Three</h2>
+</body>
+
+</html>
+
+
+Colors:
+
+property: 
+
+color: <value> 
+background-color: <value> 
+
+
+<html>
+
+<head>
+
+    <!-- internal style sheet-->
+
+    <style>
+        h1 {
+            /* color: teal; */
+            /* color: rgb(50, 190, 172) */
+            color: #00b3b3
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Flipkart E-Commerce Application</h1>
+</body>
+</html>
+
+Background:
+
+
+<html>
+
+<head>
+    <style>
+        body {
+            /* background-image: url('download.jpeg');
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: fixed */
+            background: url('download.jpeg') no-repeat fixed;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+    <h1>mshvbsdbkjbsdc</h1>
+
+</body>
+
+</html>
+
+
+
+PSTMT: 
+
+Create a background image that fills the complete page and on top of it, create a 
+registration form with 3 form fields.
+
+
+
+
+
+
+
+
