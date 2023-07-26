@@ -1,0 +1,84 @@
+Borders:
+
+CSS borders are used to highlight some content on the web page. 
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            /* border-style: solid;
+            border-width: 6px;
+            border-color: red */
+            border: solid 6px red;
+
+            /* border-top-style: solid;
+            border-top-color: red;
+            border-top-width: 10px; */
+
+            /* border-top: solid orange 20px;
+            border-bottom: solid green 20px;
+            border-left: solid black 20px;
+            border-right: solid black 20px; */
+
+            /* margin-left: 400px;
+            margin-right: 350px;
+            margin-top: 350px;
+            margin-bottom: 100px; */
+
+            margin: 350px 320px 100px 380px;
+
+            /* padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px; */
+            padding: 20px;
+            background-color: green;
+            background-image: url("download.jpeg")
+        }
+
+        h2 {
+            /* border-style: solid;
+            border-width: 6px;
+            border-color: red */
+            border: solid 6px red;
+
+            /* border-top-style: solid;
+            border-top-color: red;
+            border-top-width: 10px; */
+
+            /* border-top: solid orange 20px;
+            border-bottom: solid green 20px;
+            border-left: solid black 20px;
+            border-right: solid black 20px; */
+
+            /* margin-left: 400px;
+            margin-right: 350px;
+            margin-top: 350px;
+            margin-bottom: 100px; */
+
+            margin: 350px 320px 100px 380px;
+
+            /* padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px; */
+            padding: 20px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Recently Visited Items</h2>
+    <h1>60% of on All Brands - Mens and Women Wear</h1>
+</body>
+
+</html>
+
+
+Problem Statement:
+
+Create a profile pic and align the image on the left top corner.
