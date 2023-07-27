@@ -1,0 +1,8 @@
+DIV Tag: 
+
+div tag is used to divide the page into different parts to create 
+a layout. 
+
+div tag holds other tags , hence creating layout becomes easy and 
+flexible with divs. 
+
