@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        a:hover {}
+    </style>
+</head>
+
+<body>
+    <a id="popup" href="#">Show popup (box-shadow)</a>
+    <!-- <a href="#" >Show popup (:before & :after)</a> -->
+
+    <div class="popup" id="popup1">
+        <p>This is a popup!</p>
+        <p>Overlay uses <b>box-shadow</b>.</p>
+        <p>(Doesn't block elements on background)</p>
+        <a href="#">Close!</a>
+    </div>
+
+    <div class="popup" id="popup2">
+        <p>This is a popup!</p>
+        <p>Overlay uses <b>:before</b> and <b>:after</b> pseudo-classes.</p>
+        <p>(This one does block elements on the background)</p>
+        <button id="close">Close!</a>
+    </div>
+
+    <script>
+
+        document.getElementById("popup").addEventListener('mouseover', () => {
+            document.getElementById("popup2").style.display = "block";
+        })
+
+        document.getElementById("close").addEventListener('mouseover', () => {
+            document.getElementById("popup2").style.display = "none";
+        })
+
+        // $ = function (id) {
+        //     return document.getElementById(id);
+        // }
+        // var show = function (id) {
+        //     $(id).style.display = 'block';
+        // }
+        // var hide = function (id) {
+        //     $(id).style.display = 'none';
+        // }
+
+    </script>
+
+</body>
+
+</html>

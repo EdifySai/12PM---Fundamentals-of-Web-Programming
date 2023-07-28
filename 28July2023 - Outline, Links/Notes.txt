@@ -1,0 +1,60 @@
+Outline:
+
+Outline is helpful to highlight above the border. 
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            border: solid 1px red;
+            margin: 300px;
+            /* outline-style: solid;
+            outline-color: green; */
+            outline-offset: 10px;
+            /* outline-width: 10px ; */
+            outline: solid green 10px;
+        }
+
+        #username {
+            outline: none
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input id="username" type="text" placeholder="username here">
+
+    <!-- <h1>DigitalLync Technologies</h1> -->
+
+</body>
+
+</html>
+
+
+Links:
+
+<html>
+
+<head>
+    <style>
+        /* a:hover {
+            text-decoration: none;
+            color: orange;
+            font-family: cursive;
+        } */
+        a:visited {
+            color: orange
+        }
+    </style>
+</head>
+
+<body>
+    <a href="page1.html">Home</a>
+    <a href="page3.html" target="_blank">Page 3</a>
+</body>
+
+</html>
