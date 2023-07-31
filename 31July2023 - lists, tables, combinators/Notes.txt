@@ -1,0 +1,341 @@
+Lists:
+
+To add an image to a list item marker, then we can use  list-style-image
+
+ul {
+  list-style-image: url('sqpurple.gif');
+}
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <ul style="list-style-image: url('test.jpeg'); ">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+</body>
+
+</html>
+
+
+Ref:  
+
+https://www.w3schools.com/css/css_list.asp
+
+
+Tables:
+
+
+<html>
+
+<head>
+    <style>
+        tr:nth-child(even) {
+            background-color: grey
+        }
+
+        th {
+            font-family: cursive
+        }
+
+        tr:hover {
+            background-color: black;
+            color: whitesmoke
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" border="1" style="text-align: center">
+        <thead>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+            <tr>
+                <td>Data Cell 1</td>
+                <td>Data Cell 2</td>
+                <td>Data Cell 3</td>
+                <td>Data Cell 4</td>
+                <td>Data Cell 5</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
+
+
+Ref: https://www.w3schools.com/css/css_table.asp
+
+
+CSS Combinators: 
+
+The CSS Combinators are considered to be advanced selectors where we can 
+apply css at different levels. 
+
+We have 4 types of selectors.
+
+descendant selector (space):
+
+The descendant selector selects all the specified elements to any level in the tree from the specified 
+element. 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* #divider1 p {
+            background-color: red
+        } */
+
+        div p {
+            background-color: yellowgreen
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Descendant Selector</h2>
+
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+    <div id="divider1">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <h1>This is header</h1>
+        <section>
+            <p>Paragraph 3 in the div.</p>
+        </section>
+
+        <article>
+            <p>This is another para</p>
+        </article>
+
+    </div>
+
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+
+</body>
+
+</html>
+
+
+child selector (>): 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div>p {
+            background-color: yellowgreen
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Descendant Selector</h2>
+
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+    <div id="divider1">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <h1>This is header</h1>
+        <section>
+            <p>Paragraph 3 in the div.</p>
+        </section>
+
+        <article>
+            <p>This is another para</p>
+        </article>
+
+    </div>
+
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+
+</body>
+
+</html>
+
+adjacent sibling selector (+):
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div + p {
+            background-color: yellowgreen
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Descendant Selector</h2>
+
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+    <div id="divider1">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <h1>This is header</h1>
+        <section>
+            <p>Paragraph 3 in the div.</p>
+        </section>
+
+        <article>
+            <p>This is another para</p>
+        </article>
+
+    </div>
+
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+
+</body>
+
+</html>
+
+general sibling selector (~): 
+
+The general sibling selector selects all elements that are next siblings of a specified element.
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div~p {
+            background-color: yellowgreen
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Descendant Selector</h2>
+
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+    <div id="divider1">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <h1>This is header</h1>
+        <section>
+            <p>Paragraph 3 in the div.</p>
+        </section>
+
+        <article>
+            <p>This is another para</p>
+        </article>
+
+    </div>
+
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+
+</body>
+
+</html>
+
+
