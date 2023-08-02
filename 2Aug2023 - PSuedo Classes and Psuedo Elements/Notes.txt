@@ -1,0 +1,130 @@
+Pseudo Classes and Elements:
+
+Pseudo classes are used to add a special state (effect of css) to an element. 
+
+
+<html>
+
+<head>
+
+    <style>
+        img:hover {
+            width: 165px;
+            height: 162px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img src="https://rukminim1.flixcart.com/flap/160/160/image/29327f40e9c4d26b.png?q=100">
+
+</body>
+
+</html>
+
+
+Ref: 
+
+ https://www.w3schools.com/css/css_pseudo_classes.asp
+ https://www.javatpoint.com/css-pseudo-classes
+
+
+ <html>
+
+<head>
+
+    <style>
+        img:hover {
+            width: 165px;
+            height: 162px;
+        }
+
+        input:focus {
+            font-family: cursive;
+            color: green
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <input type="text" placeholder="enter username">
+
+
+</body>
+
+</html>
+
+psuedo elements:
+
+
+<html>
+
+<head>
+
+    <style>
+        /* img:hover {
+            width: 165px;
+            height: 162px;
+        }
+
+        input:focus {
+            font-family: cursive;
+            color: green
+        } */
+
+        /* #abc {
+            border: teal 1px solid
+        } */
+
+        p::first-line {
+            color: green;
+            font-size: 30px;
+        }
+
+        p::first-letter {
+            font-size: 50px;
+            font-family: cursive
+        }
+
+
+        h1::after {
+            content: "This is after content"
+        }
+
+        h1::selection {
+            color: red;
+            background-color: yellow
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+        going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
+        comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+        Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+    </p>
+
+
+    <h1>50% OFF ON ALL PRODUCTS</h1>
+
+
+    <h1>CSS is all about knowing the properties and values along with syntaxes</h1>
+
+</body>
+
+</html>
+
+
+Ref:  https://www.w3schools.com/css/css_pseudo_elements.asp 
+
+
