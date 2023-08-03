@@ -1,0 +1,132 @@
+Javascript: 
+
+JS is a scripting language (never be compiled) used to describe dynamic 
+nature to the html web pages. 
+
+Later, JS can also be used for developing server side applications. 
+
+Using JS, we can develop an E2E application. Some of the popular javascript 
+stacks are 
+
+M E R N - MongoDB  Express React Node 
+
+M E A N - MongoDB  Express  Angular Node 
+
+M E V N -  MongoDB  ExpressJS  Vue   Node 
+
+Brendan developed javascript while working in netscape company. He develop 
+JS to support netscape navigator browser. 
+
+ECMA ( European Computers Manufacturers Association) has standardized javascript. 
+
+Javascript can also be called as ECMA SCRIPT. 
+
+The standard version of JS is ES5 (ECMA SCRIPT 5). 
+
+
+Variables:
+
+A Variable is an identifier which is used to identify some value. 
+
+syntax:  
+
+var var_name = <value>
+
+var username = "kiran"
+
+var age = 21 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="username here">
+    <input type="text" id="password" placeholder="password here">
+
+    <button onclick="login()">Login</button>
+
+    <script>
+        // username ="ravi" password = "ravi123" 
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "kiran" && password == "kiran123") {
+                alert("login success");
+                // logic for redirection..
+            }
+            else {
+                alert("username / password incorrect!");
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+Types of Variables:
+
+There are 2 types of variables.
+
+1. Local Variables :
+
+If a variable is created inside a function, then it is known as local variable. 
+
+
+The scope of the local variable is with in the function, which means, the local variables can be 
+accessed only within the function. 
+
+function f1() {
+            var a = 10; // local variable
+            var b = 20;
+            console.log(a);
+            console.log(b);
+        }
+        f1();
+        console.log(a); // error
+        console.log(b);
+
+2. Global Variables
+
+A variable that is created outside of the functions is known as global 
+variable. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var a = 10; // global variable
+        var b = 20; // global variable
+        function f1() {
+            console.log(a);
+            console.log(b);
+        }
+        f1();
+
+        function f2() {
+            console.log(a);
+            console.log(b);
+        }
+
+        f2();
+        console.log(a);
+        console.log(b);
+    </script>
+</body>
+
+</html>
+Global variables can be accessed any where in the application. 
+
+
+
+
