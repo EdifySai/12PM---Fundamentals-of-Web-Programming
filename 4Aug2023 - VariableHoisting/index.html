@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <i onclick="like()" class="fa fa-thumbs-o-up" style="font-size:48px;color:blue"></i> &nbsp;
+    <h1 id="counter" style="display: inline">0</h1>
+
+    <script>
+        var counter = 0;
+        function like() {
+
+            // var x = document.getElementById("counter").innerText;
+            // x++;
+            // document.getElementById("counter").innerText = x;
+            counter++;
+            document.getElementById("counter").innerText = counter;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+Variable Hoisting:
+
+It is the default process where all the variables are declared at the top of 
+the file before the execution of the code. 
+
+console.log(a);  //
+        var a = 100;
+        console.log(b);  //
+        var b = 200;
+
+        /*
+             var a,b;
+             console.log(a); //undefined
+             a=100;
+             console.log(b); // undefined
+             b=200;
+
+        */
+
+
+
+another example:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        console.log(a); // undefined, 100
+        var a = 100;
+        function f1() {
+            console.log(a); // undefined, 100,90
+            var a = 90;
+            console.log(a); // 90
+        }
+        f1();
+        console.log(a); // 100, 90
+        /*
+              var a;
+              console.log(a); // undefined
+              a=100;
+              function f1(){
+                  var a;
+                  console.log(a); //undefined
+                  a=90;
+                  console.log(a); // 90
+              }
+              f1();
+              console.log(a); // 100
+        */
+    </script>
+</body>
+</html>
+
+
+Problem Statement: 
+
+Implement Likes feature using javscript. 
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <i onclick="like()" class="fa fa-thumbs-o-up" style="font-size:48px;color:blue"></i> &nbsp;
+    <h1 id="counter" style="display: inline">0</h1>
+
+    <script>
+        var counter = 0;
+        function like() {
+
+            // var x = document.getElementById("counter").innerText;
+            // x++;
+            // document.getElementById("counter").innerText = x;
+            counter++;
+            document.getElementById("counter").innerText = counter;
+        }
+
+    </script>
+</body>
+
+</html>
+
+Problem Statement:
+
+Implement Instagram Like feature. 
+
+Toggle between the like and unlike icons using javascript. 
