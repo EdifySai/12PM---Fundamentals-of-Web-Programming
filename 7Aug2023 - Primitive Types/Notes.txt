@@ -1,0 +1,120 @@
+Data types: 
+
+JS provides 2 types of Datatypes.
+
+1. Primitive Types : number, boolean , string
+2. Referenced / Non Primitive Types : arrays and objects 
+
+uncategorized types: undefined and null 
+
+
+1. Primitive Types : number, boolean , string
+
+number: 
+
+ var a = 100;
+
+        console.log(a);
+
+        console.log(typeof a);
+
+        var rating = 4.12;
+
+        console.log(typeof rating);
+
+boolean:   true / false
+
+
+ var isDone = true;
+
+        console.log(typeof isDone);
+
+        isDone = false;
+
+        console.log(typeof isDone);
+
+        isDone = 1;
+
+        console.log(typeof isDone); // ? 
+
+
+String: 
+
+A String is a collection of characters. 
+
+var str = " "
+ 
+ or 
+
+ var str =  ' '
+
+
+   var username = "kiran";
+
+        var password = 'sdbsbdckjbsdc';
+
+        console.log(typeof username);
+        console.log(typeof password);
+
+
+Strings are immutable, which means once we create a String, we cannot modify it. However, If we want to 
+update the value of a String then we can reassign the value. 
+
+
+ var firstName = "digital";
+        var lastName = "lync";
+        firstName.concat(lastName); // "digital lync"
+        console.log(firstName); // 
+        firstName = firstName.concat(lastName);
+        console.log(firstName);
+
+
+JS provides multiple predefined functions that can be used to modify strings based on the requirement. 
+
+Example:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    Email: <input size="50" type="text" id="email" placeholder="enter email">
+
+    <button onclick="next()">Next</button>
+
+    <script>
+
+        function next() {
+            var email = document.getElementById("email").value;
+            console.log(email);
+            email = email.toLowerCase();
+            email = email.trim();
+            console.log("email", email);
+            if (email.includes('@gmail.com')) {
+            }
+            else {
+                if (email.includes('@') && email.includes('.')) {
+
+                }
+                else {
+                    email = email.concat("@gmail.com")
+                }
+            }
+            console.log(email);
+            document.getElementById("email").value = email;
+        }
+    </script>
+
+</body>
+
+</html>
+
+Non-Primitive Types: 
+
+
+
+
+
