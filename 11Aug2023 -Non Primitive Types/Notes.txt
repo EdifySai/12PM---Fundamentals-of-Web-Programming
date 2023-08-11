@@ -1,0 +1,131 @@
+Non Primitive Types: 
+
+Arrays and Objects. 
+
+Arrays:
+
+An Array is a linear data structure which stores the data in the sequential 
+order. 
+
+In JS, An array can store different type of values. 
+
+syntax: 
+
+var array =[1,2,3,true, false, "hello"];
+
+Javascript provides some predefined functions to work with Arrays. 
+
+ var data = [100, 200, true, false, true, "hello", [1, 2, 3]];
+
+        console.log(data[0]);
+        console.log(data[6][2]);
+        console.log(data[88]);
+        console.log(data);
+
+
+Predefined functions:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var data = [100, 200, true, false, true, "hello", [1, 2, 3]];
+        console.log(data);
+        data.pop();
+        console.log(data);
+        data.shift();
+        console.log(data);
+        var index = data.indexOf(false);
+        data.splice(index, 1);
+        data.unshift(100);
+        console.log(data);
+        var index2 = data.lastIndexOf(true);
+        console.log(index2);
+        data.splice(index2, 1);
+        console.log(data);
+        var index3 = data.indexOf(100);
+        data.splice(index3 + 1, 0, 150);
+        console.log(data);
+
+    </script>
+
+</body>
+
+</html>
+
+Objects: 
+
+
+An Object is a realtime entity which contains the attributes. 
+
+A Javascript Object is a representation of realtime entity in the 
+form of key-value pairs. 
+
+syntax: 
+
+var object = {
+     key : value,
+     key: value,
+     .
+     .
+     .
+}
+
+Key must be unique and recommeneded to be a String,
+values can be of any type and need not to be unique.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var user = {
+            firstname: "kiran",
+            lastname: "kumar",
+            dob: {
+                date: 15,
+                month: 4,
+                year: 2000
+            },
+            address: {
+                city: "Hyderabad",
+                state: "Telanagana",
+                country: "India"
+            },
+            languages: ["hindi", "telugu", "tamil", "english"]
+        }
+        console.log(user.firstname);
+        console.log(user.lastname);
+        console.log(user.address.country);
+        console.log(user.languages);
+        console.log(user.userId);
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
