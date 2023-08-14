@@ -1,0 +1,164 @@
+Operators and control statements:
+
+Operators:
+
+An Operator is a special symbol  or a keyword that provides some functionality. 
+
+ex: + -> addition , concatenation. 
+   
+    typeof -> provides the datatype of a variable.
+
+Arithmetic Operators: 
+
++,-, *, /(quotient), %(remainder), ++ (increment), --(decrement)
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <script>
+        var a = 100;
+        a++;  // post increment 
+        console.log(a);
+        ++a; // pre increment 
+        a--; // post decrement
+        --a; // pre decrement
+        console.log(a);
+    </script>
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <script>
+
+        var a = 10, b = 20, c = "20", d = "20s";
+
+        console.log(a + c + b); // 
+
+        console.log(c + a + b); // 201020
+
+        console.log(a - c);
+
+        console.log(a * c * b);
+
+        console.log(c - d);
+
+    </script>
+</body>
+
+</html>
+
+comparision Operators: always return boolean as result
+
+>,<,>=,<=,==,===, ?:
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <script>
+        var a = 110, b = 20, c1 = 20, c = "20", d = "20s";
+        console.log(a > b);
+        console.log(a < b);
+        console.log(b < c1);
+        console.log(b > c1);
+        console.log(b <= c1);
+        console.log(b >= c1);
+        console.log(a < c);
+        console.log(c > a);
+        console.log(c1 <= d);
+        console.log(c1 <= c);
+        console.log(c1 == c); // checks for content
+        console.log(c1 === c); // checks for content and datatype
+
+        a > b ? console.log("a is greater than b") : console.log("a is less than b")
+
+    </script>
+</body>
+
+</html>
+
+
+Logical Operators: 
+
+&& (AND), ||(OR), !(NOT)
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <script>
+        var a = 110, b = 20, c1 = 20, c = "20", d = "20s";
+
+        console.log(a > b && a > c1);
+        console.log(a > b && a < c1);
+        console.log(a > b || a > c1);
+        console.log(a < b || a > c1);
+
+        console.log(!(a > b));
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+logical operators:
+
+<html>
+
+<head>
+    
+</head>
+<body>
+    <input type="text" id="emailormobile" size="40" placeholder="enter email or phone number"> <br><br>
+    <input type="text" id="password" placeholder="enter password"> <br><br>
+    <button onclick="login()">Login</button>
+    <script>
+        function login() {
+            var emailormobile = document.getElementById("emailormobile").value;
+            var password = document.getElementById("password").value;
+            (emailormobile == "digi@gmail.com" || emailormobile == "7010101010") && password == "digital" ? alert("login success") : alert("login failure");
+        }
+    </script>
+</body>
+
+</html>
+
+typeof : typeof is used to find the datatype of variable. 
+  var a =100; 
+          console.log(typeof a);
+
+instanceof: 
+        var x = new Number(100);
+        console.log(x instanceof String);
+
+
+
+
+
+
+
