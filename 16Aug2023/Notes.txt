@@ -1,0 +1,288 @@
+Control Statements:
+
+Sequential : if, if-else, switch
+Iterative : while,do-while, for 
+Jump: continue, return , break
+
+
+Sequential : if, if-else, switch
+
+if: 
+
+syntax: 
+
+if(test-condition){
+
+    // code
+}
+
+var username = "ravi";
+
+        if (username == "ravi123") {
+            console.log("Username verified");
+        }
+
+if-else:
+
+if(test-condition){
+
+
+}
+else{
+
+
+}
+
+
+  var username = "ravi";
+
+        if (username == "ravi") {
+            console.log("Username verified");
+        }
+        else {
+            console.log("username incorrect!");
+        }
+
+
+switch: 
+
+switch(choice){
+    case casevalue1 :  // code
+    case casevalue2 :  // code 
+    case casevalue3 : // code 
+    .
+    .
+    .
+    .
+    default: // code
+}
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var choice = "salesforce";
+        switch (choice) {
+            case "java": console.log(" java"); break;
+            case "mean": console.log(" mean"); break;
+            case "mern": console.log("mern"); break;
+            case "dotnet": console.log("dotnet"); break;
+            default: console.log("n/a");
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <select onchange="showContent()" id="lang">
+
+        <option>Select Language</option>
+        <option value="telugu">Telugu</option>
+        <option value="hindi">Hindi</option>
+        <option value="marathi">Marathi</option>
+        <option value="kannada">Kannada</option>
+
+    </select>
+
+    <h1 id="msg"></h1>
+
+    <script>
+        var msg = document.getElementById("msg");
+        function showContent() {
+            var choice = document.getElementById("lang").value;
+            switch (choice) {
+                case "telugu": msg.innerText = "హలో! నువ్వు ఎలా ఉన్నావు?"; break;
+                case "hindi": msg.innerText = "नमस्ते! आप कैसे हैं?"; break;
+                case "marathi": msg.innerText = "नमस्कार! कसं चाललंय?"; break;
+                case "kannada": msg.innerText = "ನಮಸ್ಕಾರ! ಹೇಗಿದ್ದೀಯಾ?"; break;
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
+
+Iterative: 
+
+1. while: 
+
+ syntax: 
+
+ while(test-condition){
+
+  // code
+
+ }
+
+  var index = 0;
+
+        while (index < 10) {
+            console.log(index); // 0  1 ...... 9 
+            index++;
+        }
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <ul id="usersInfo">
+
+    </ul>
+
+    <script>
+
+        var users = ["kiran", "rajesh", "naveen", "venkat"];
+
+        var usersInfo = document.getElementById("usersInfo");
+
+        var index = 0;
+
+        var listItems = "";
+
+        while (index < users.length) {
+            listItems = listItems + "<li>" + users[index] + "</li>";
+            index++;
+        }
+        console.log(listItems);
+        usersInfo.innerHTML = listItems;
+    </script>
+
+</body>
+
+</html>
+
+
+do-while: 
+
+syntax: 
+       do{
+
+          // code
+
+       }while(test-condition);
+
+
+In DO-WHILE, the do will be executed for the first time without checking the condition. 
+
+
+ <html>
+
+<head>
+
+</head>
+
+<body>
+
+    <ul id="usersInfo">
+
+    </ul>
+
+    <script>
+
+        var index = 100;
+        do {
+            console.log(index);
+            index++;
+        } while (index < 16)
+
+    </script>
+
+</body>
+
+</html>
+
+For loop: 
+
+syntax: 
+
+for(init; test-condition; inc/ dec) {
+
+ // code
+
+}
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <ul id="usersInfo">
+
+    </ul>
+
+    <script>
+
+        var users = ["kiran", "rajesh", "naveen", "venkat"];
+
+        var usersInfo = document.getElementById("usersInfo");
+        var listItems = "";
+        for (var index = 0; index < users.length; index++)
+            listItems = listItems + "<li>" + users[index] + "</li>";
+        console.log(listItems);
+        usersInfo.innerHTML = listItems;
+    </script>
+
+</body>
+
+</html>
+
+Jump Statements:
+
+break, continue and return 
+
+break: it is used to terminate a block . 
+
+continue:  To skip / terminate the current iteration, we can use 
+continue. 
+
+  for (var i = 0; i < 10; i++) {
+            if (i == 2) {
+                continue;
+            }
+            console.log(i);
+        }
+return: to terminate a function, we can use return:
+
+        function f1() {
+            var a = 100;
+            if (a < 200) {
+                console.log(a); // 100
+                a = a + 200;
+                return;
+            }
+            console.log(a); // 
+        }
+        f1();
+
+
+
