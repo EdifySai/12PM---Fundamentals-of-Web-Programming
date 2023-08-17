@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        function f1() {
+            var a = 100;
+            var b = 200;
+            function f2() {  // closure scope
+                console.log(a);
+                console.log(b);
+            }
+            f2();
+        }
+
+        f1();
+    </script>
+
+</body>
+
+</html>

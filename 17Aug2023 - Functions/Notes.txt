@@ -1,0 +1,248 @@
+Functions:
+
+A function is a block of code, that takes an input(optional), process some data and provides 
+some result. 
+
+syntax: 
+
+function function_name(parameters){
+
+ // code 
+
+}
+
+function_name(arguments)
+
+
+
+   function f1(a, b) {
+            console.log(a + b);
+        }
+        f1(10, 20);
+
+
+In Javascript, The function names are checked, hence even though there is a mismatch in the arguments vs parameters, 
+still the function invocation happens. 
+
+  function f1(a, b) {
+            console.log(a,b);
+            console.log(a + b);
+        }
+        f1();
+
+
+Anonymous Functions: Function without a name is known as anonymous function. 
+
+In JS, we can pass a function as an argument, thats where the anonymous functions will be helpful.
+
+
+        function f1(x) {
+            x();
+        }
+        f1(function () {
+            console.log("anonymous function called");
+        });
+
+
+usage:
+ var arr = [10, 20, 30, 40, 50, 60];
+        arr.forEach(function (value) {
+            console.log(value);
+        })
+
+
+
+  var arr = [10, 20, 30, 40, 50, 60];
+        arr.forEach(function (value) {
+            console.log(value);
+        })
+
+ // customForEach
+        
+        // function customForEach(callbackFn) {
+
+        //     for (var i = 0; i < arr.length; i++) {
+        //         callbackFn(arr[i]);
+        //     }
+
+        // }
+        //  customForEach(function (value) {
+        //     console.log(value);
+        // })
+
+
+Function Expressions: 
+
+If a function can be referred with a variable, then it is known as function expression.
+
+ function f1(X) {
+            X();
+        }
+
+        function f2(Y) {
+            Y();
+        }
+        function f3(Z) {
+            Z();
+        }
+        var callback = function () { // Function expression
+            console.log("anonymous function 1.x");
+        };
+
+        f1(callback);
+        f2(callback);
+        f3(callback);
+
+
+First class functions: If a function can be passed as an argument (anonymous), referred with a variable (FE), returned from 
+another function then we call those functions as first class functions. 
+
+ function f1() {
+            return function (a, b) {
+                console.log("Returned function");
+                console.log(a, b);
+            }
+        }
+        f1()(10, 20);
+
+IIFE: Immediately Invoked Function Expression
+
+IIFEs are the functions that gets invoked automatically, however, we will not be able to call 
+the function.
+
+These are also called as self invoking functions. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        (function () {
+            console.log("IIFE logic");
+        })();
+
+        (function () {
+            console.log("IIFE logic");
+        })();
+
+
+        (function () {
+            console.log("IIFE logic");
+        })();
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+Call, Apply and Bind:
+
+Call: is used to call a function of other object by subsitituing another object. 
+
+ var user = {
+            name: "kiran",
+            address: "hyderabad",
+            getDetails: function () {
+                return this.name + "\t" + this.address
+            }
+        }
+        //  console.log(user.getDetails());
+
+        var user2 = {
+            name: "rajesh",
+            address: "chennai"
+        }
+
+        console.log(user.getDetails.call(user2));
+        console.log(user.getDetails());
+
+
+Apply: same as call function but if we have any arguments to be passed, then apply function will automatically 
+spread the array of values.
+
+var user = {
+            name: "kiran",
+            address: "hyderabad",
+            getDetails: function (a, b, c) {
+                return this.name + "\t" + this.address + "\t" + a + "\t" + b + "\t" + c;
+            }
+        }
+        //  console.log(user.getDetails());
+
+        var user2 = {
+            name: "rajesh",
+            address: "chennai"
+        }
+
+        var arr = [10, 20, 30];
+        console.log(user.getDetails.call(user2, arr[0], arr[1], arr[2]));
+        console.log(user.getDetails.apply(user2, arr));
+       // console.log(user.getDetails(10, 20, 30));
+
+
+Call By Value: 
+
+        var a = 100;
+        function f1(b) {
+            console.log(b);  // 100
+            b = 200;
+        }
+        f1(a); // All primitive types follow call by value-> f1(100)
+        console.log(a); // 
+
+All primitive types follow call by value. 
+
+Call by reference:
+
+ var arr = [10, 20, 30];
+        function f1(x) {
+
+            x.push(90);
+            x.push(100);
+
+        }
+
+        f1(arr); // call by reference  f1(address)
+
+        console.log(arr.length); // 5 
+
+
+In Call By reference, the address will be passed.
+
+
+Closures:
+
+A Closure is a scope that gets formed when a function (inner) is created inside another function.
+
+The reason to create inner functions is to create private functions. 
+
+
+ function f1() {
+            var a = 100;
+            var b = 200;
+            function f2() {  // closure scope
+                console.log(a);
+                console.log(b);
+            }
+            f2();
+        }
+
+        f1();
+
+
+
+
+
+
+
+
+
+
+
