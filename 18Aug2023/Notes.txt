@@ -1,0 +1,248 @@
+Methods of Arrays:
+
+
+ var arr = [10, 20, 30, 0, 120, 100, 0];
+        console.log(arr);
+        arr.push(10);
+        console.log(arr);
+        arr.unshift(0);
+        console.log(arr);
+
+
+foreach vs filter vs map :
+
+ var arr = [10, 20, 30, 0, 120, 100, 0];
+        arr.forEach(function (value) {
+            console.log(value);
+        })
+        var newArray = arr.filter(function (value) {
+            return value; // 0 or false -> ignore
+        })
+        console.log(newArray);
+
+        var result = arr.map(function (value) {
+            return value * 2;
+        })
+        console.log(result);
+
+
+Problem Statement: 
+
+ var arr= [10,20,30,10,20,30,40,50,"hello","hey", "hi"]; 
+
+ filter only strings from the above array. 
+
+ hint: filter. 
+
+
+ var arr = [10, 20, 30, 10, 20, 30, 40, 50, "hello", "hey", "hi"];
+
+        var filterData = arr.filter(function (value) {
+            return typeof value == "string";
+        })
+        console.log(filterData);
+
+
+Problem Statement: 
+
+Create a simple user management system using arrays.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <h1>Add User Form</h1>
+
+    <input type="text" id="username" placeholder="username"> <br><br>
+
+    <input type="text" id="email" placeholder="email"><br><br>
+
+    <input type="text" id="mobile" placeholder="mobile"> <br><br>
+
+    <button onclick="addUser()">Add User</button>
+
+    <ul id="usersList" style="list-style-type: none">
+
+    </ul>
+    <script>
+        var users = [];
+        function addUser() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("mobile").value;
+            var user = {
+                username: username,
+                email: email,
+                mobile: mobile
+            }
+            console.log(user);
+            users.push(user);
+            console.log(users);
+            showUsers();
+        }
+
+        function showUsers() {
+            var usersList = document.getElementById("usersList");
+            var listItems = "";
+            users.forEach(function (user) {
+                listItems = listItems + "<li>" + user.username + "&nbsp;&nbsp;&nbsp;" + user.email + "&nbsp;&nbsp;&nbsp;" + user.mobile + "</li>"
+            })
+            usersList.innerHTML = listItems;
+        }
+    </script>
+</body>
+
+</html>
+
+
+Numbers and Dates:
+
+Numbers: 
+
+        
+We can create numbers in 2 ways
+
+1. using primitive type 
+2. using object 
+
+ var age = 19;
+
+        console.log(typeof age);
+
+        var rating = new Number(4.5);
+
+        console.log(typeof rating);
+
+        var age2 = new Number(19);
+        console.log(age == age2);
+        console.log(age === age2);
+
+Date: 
+
+ var date = new Date();
+
+        console.log("date", date);
+        console.log(date.getDate());
+        console.log(date.getMonth());
+        console.log(date.getFullYear());
+        console.log(date.getHours());
+        console.log(date.getMinutes());
+        console.log(date.getSeconds());
+
+
+PS: Show the digital time using Date.
+
+
+   setInterval(
+            function () {
+                
+                var date = new Date(); 
+
+                 document.getElementById("dateRef").innerHTML = date.getHours()+":"+ date.getMinutes()+":"+ date.getSeconds()
+
+            }, 1000
+        )
+
+
+PS: Display the time stamp in the following format 
+
+
+ DD/MM/YYYY  HH:MM:SS 
+
+ 18/08/2023 12:37:09
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1 id="dateRef"></h1>
+
+    <script>
+        function getTimeStamp() {
+            var date = new Date();
+            var d = addZero(date.getDate()) + "/" + addZero(date.getMonth() + 1) + "/" + date.getFullYear();
+            var t = addZero(date.getHours()) + ":" + addZero(date.getMinutes()) + ":" + addZero(date.getSeconds());
+            return d + "      " + t;
+        }
+        function addZero(input) {
+            if (input < 10) {
+                input = '0' + input;
+            }
+            return input;
+        }
+        console.log(getTimeStamp());
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Based on User's date selection, capture the value and display it on console.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1 id="dateRef"></h1>
+
+    <input type="date" id="dateCapture">
+    <button onclick="capture()">Submit</button>
+
+    <script>
+
+        function capture() {
+
+            var date = document.getElementById("dateCapture").value;
+
+            console.log("date", date);
+
+
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement:  Task
+Create a text field, ask the user to enter the data in a format (date, time) , capture the 
+date and time , then find the difference between the captured date and current date. 
+
+Strings:
+
+Methods: 
+
+There are 2 types of methods in Strings,
+
+1. results in html elements 
+2. results in  non-html elements 
+
+
+
+
+
+
+
+
+
+
+
+
+
