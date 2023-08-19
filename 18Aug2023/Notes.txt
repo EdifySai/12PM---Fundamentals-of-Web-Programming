@@ -234,7 +234,36 @@ There are 2 types of methods in Strings,
 1. results in html elements 
 2. results in  non-html elements 
 
+<html>
 
+<head>
+
+</head>
+
+<body>
+
+    <div id="abc">
+
+    </div>
+
+    <script>
+
+        var str = "hel lo";
+
+        var socialSite = "facebook";
+        var url = "https://www.facebook.com";
+        console.log(str.toUpperCase());
+        console.log(str.bold());
+        console.log(str.italics());
+        console.log(socialSite.link(url));
+        document.getElementById("abc").innerHTML = socialSite.link(url);
+        console.log(str.split(" "));
+        console.log(str.startsWith("hel"));
+        console.log(str.endsWith("lo"));
+    </script>
+</body>
+
+</html>
 
 
 

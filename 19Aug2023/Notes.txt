@@ -1,0 +1,507 @@
+ Objects:
+
+Methods:
+
+create: used to create a new object from existing object. 
+
+  var bank = {
+            bankName: "ICICI",
+            branch: "Madhapur"
+        }
+
+        var customer = Object.create(bank);
+        console.log(customer.bankName);
+        console.log(customer.branch);
+        customer.cid = 101;
+        customer.name = "kiran";
+        console.log(customer);
+
+
+keys and values: 
+
+   var bank = {
+            bankName: "ICICI",
+            branch: "Madhapur",
+            ifscCode: "ICICI9089999",
+            manager: "Amil"
+        }
+        var allKeys = Object.keys(bank);
+        console.log(allKeys);
+        var values = Object.values(bank);
+        console.log(values);
+
+
+Freezing a property:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var bank = {
+            bankName: "ICICI",
+            branch: "Madhapur",
+            ifscCode: "ICICI9089999",
+            manager: "Amil"
+        };
+        Object.defineProperty(bank, "bankName", { configurable: false, writable: false });
+        bank.bankName = "HDFC";
+        bank.abc = 123;
+        bank.branch = "Hitech city"
+        console.log(bank);
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+Freezing an object:
+
+var bank = Object.freeze({
+            bankName: "ICICI",
+            branch: "Madhapur",
+            ifscCode: "ICICI9089999",
+            manager: "Amil"
+        });
+
+
+        bank.bankName = "HDFC";
+        bank.abc = 123;
+        console.log(bank);
+
+
+
+this:  this refers to current object. 
+
+var employee = {
+            eid: 101,
+            name: "kiran",
+            getDetails: function () {
+                return this.eid + "\t" + this.name;
+            }
+        }
+
+        var emp2 = {
+            eid: 102,
+            name: "ram"
+        }
+        console.log(employee.getDetails());
+
+        console.log(employee.getDetails.call(emp2));
+
+
+Problem Statement: 
+
+Create a dynamic table header using keys function.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <table border="1" width="100%">
+
+        <thead id="thead">
+
+        </thead>
+
+    </table>
+
+    <script>
+
+        var user = {
+            name: "Kiran",
+            department: "IT",
+            address: "hyderabad",
+            userId: 102,
+            division: "XYZ"
+        }
+
+        var keys = Object.keys(user);
+
+        console.log(keys);
+
+        var allTableHeaders = "";
+
+        keys.forEach(function (key) {
+
+            allTableHeaders = allTableHeaders + "<th>" + key + "</th>"
+
+        })
+
+        document.getElementById("thead").innerHTML = allTableHeaders;
+
+
+
+    </script>
+
+</body>
+
+</html>
+
+Scopes: 
+
+There are 2 scopes in JS. 
+
+1. Local Scope :  Under LS, we have local variables
+
+The local scope gets created when a function is in execution.
+
+
+2. Global Scope :  under GS, we have global variables. 
+
+The global scope gets created as soon as we start the application.
+
+
+code:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var a = 100;
+        var b = 200;
+        function f1() {
+            var c = 300;
+            var d = 400;
+            console.log(c);
+            console.log(d);
+        }
+        function f2() {
+            var e = 1300;
+            var f = 1400;
+            console.log(e);
+            console.log(f);
+        }
+        console.log(a);
+        f1();
+        f2();
+        console.log(a);
+        console.log(b);
+
+    </script>
+
+</body>
+
+</html>
+
+note: Use developer tools -> sources -> add a break point 
+
+events:
+
+JS provides different types of events.
+
+onclick, onmouseover, onsubmit, onchange, onkeyup.....
+
+https://www.w3schools.com/jsref/dom_obj_event.asp
+
+PS:  Disable the copy and paste in a text field. 
+
+<html>
+
+<head>
+
+</head>
+
+<body oncontextmenu="return false">
+
+    <input type="text" placeholder="enter username" oncopy="return false" onpaste="return false">
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
+
+
+PS:  Convert the lowercase characters to uppercase automatically as in when the user is entering. 
+
+<html>
+
+<head>
+
+</head>
+
+<body oncontextmenu="return false">
+
+    <input type="text" id="username" onkeyup="keyupHandler()" placeholder="enter username" oncopy="return false"
+        onpaste="return false">
+
+    <script>
+        function keyupHandler() {
+            var value = document.getElementById("username").value;
+            document.getElementById("username").value = value.toUpperCase();
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+ Error Handling:
+
+ Whenever an error occurs,the program will be terminated 
+ abnormally which means the application will be crashed. 
+
+ Error Handling is the process of skipping the code that raises 
+ an error and continue the flow of execution. 
+
+ we use try, catch and finally blocks for error handling. 
+
+ In TRY block, we will place the code that might raise an error. 
+
+
+<html>
+
+<head>
+
+</head>
+
+
+
+<script>
+
+
+    var user;
+
+    function getUsersFromSource() {
+
+        // API call
+
+        // user = {
+        //     id: 101,
+        //     name: "kiran"
+        // }
+
+    }
+    console.log("database connection");
+    getUsersFromSource();
+    try {
+        console.log(user.id);
+    }
+    catch (error) {
+        console.log(error);
+        // log the error over an email
+        // throw new Error("some error");
+
+    }
+    finally {
+        console.log("database disconnection");
+    }
+</script>
+
+</body>
+
+</html>
+
+Reference of Errors: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors 
+
+
+ Garbage Collection:
+
+ It is the process where the runtime engines uses the garbage 
+ collector to remove the garbage ( unused / unreferenced objects) from 
+ the memory. 
+
+ As a developer, we need to write Garbage  collector friendly code. 
+
+  var user;
+
+    function getUsersFromSource() {
+
+        // API call
+
+        user = {
+            id: 101,
+            name: "kiran"
+        }
+
+    }
+    console.log("database connection");
+    getUsersFromSource();
+    try {
+        console.log(user.id);
+    }
+    catch (error) {
+        console.log(error);
+    }
+    finally {
+        console.log("database disconnection");
+        user = null; // nullification
+    }
+
+Best Coding Practices:
+
+1. add meaningful comments so that other developers can understand 
+the code. 
+
+2. use meaningful names for variables, functions etc. 
+
+3. instead of using ==, === 
+
+4.  Always assign only one responsibility to a function. 
+
+5.  Implement nullification (GC friendly code)
+
+6. Follow Naming Conventions such as varibles must be noun, 
+functions must be verbs...
+
+7.Do not add console.log()'s  in the production code. 
+
+
+DOM:  Document Object Model 
+
+Methods: 
+
+ <input type="text" id="username">
+
+    <p>This is a paragraph!</p>
+
+    <h1 class="x">This is a header</h1>
+
+    <button onclick="capture()">Capture</button>
+
+    <script>
+
+        function capture() {
+            console.log(document.getElementById("username").value);
+            var parray = document.getElementsByTagName("p");
+            console.log(parray);
+            parray[0].style.color = "red";
+            var h1array = document.getElementsByClassName("x");
+            h1array[0].style.backgroundColor = "red";
+        }
+
+
+    </script>
+
+Events && Event Listener:
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button>Greetings</button>
+    <script>
+        function btnHandler() {
+            alert("Happy Weekend!");
+        }
+        var btnArray = document.getElementsByTagName("button");
+        btnArray[0].addEventListener('click', btnHandler);
+        btnArray[0].addEventListener('mouseover', function () {
+            btnArray[0].style.backgroundColor = "red";
+        });
+        btnArray[0].addEventListener('mouseout', function () {
+            btnArray[0].style.backgroundColor = "";
+        });
+    </script>
+</body>
+
+</html>
+
+
+Node: Every HTML element is considered as a node. 
+
+we can create our nodes, modify them and delete them. 
+
+Problem Statement: 
+
+Create an otp dynamically using node concept.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <div id="abc">
+
+    </div>
+
+    <script>
+        var input = document.createElement("input");
+        input.type = "text";
+        input.id = "otp";
+        input.placeholder = "enter otp here";
+        console.log(input);
+
+        var button = document.createElement("button");
+        button.innerText = "Submit";
+
+        var div = document.getElementById("abc");
+
+        div.appendChild(input);
+        div.appendChild(button);
+
+    </script>
+
+</body>
+
+</html>
+
+
+Navigation:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div>
+        <p>This is some paragraph!</p>
+    </div>
+    <script>
+        document.body.firstChild.nextSibling.firstChild.nextSibling.style.backgroundColor = "red";
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
