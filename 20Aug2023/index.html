@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input size="30" type="text" id="password" onkeyup="passwordValidator()" placeholder="enter password"> <span
+        style="color: red" id="msg"></span>
+
+
+    <script>
+
+        var msg = document.getElementById("msg");
+        function passwordValidator() {
+            var password = document.getElementById("password").value;
+            if (password.length < 8) {
+                msg.innerText = "password cannot be less than 8 characters";
+                return;
+            }
+            else {
+                msg.innerText = "";
+            }
+            if (/[A-Z]+/g.test(password)) {
+                msg.innerText = "";
+            }
+            else {
+                msg.innerText = "password should have atleast 1 uppercase";
+                return;
+
+            }
+            if (/[a-z]+/g.test(password)) {
+                msg.innerText = "";
+            }
+            else {
+                msg.innerText = "password should have atleast 1 lowercase";
+                return;
+
+            }
+            if (/[0-9]+/g.test(password)) {
+                msg.innerText = "";
+            }
+            else {
+                msg.innerText = "password should have atleast 1 digit";
+                return;
+            }
+            if (/\W+/g.test(password)) {
+                msg.innerText = "";
+            }
+            else {
+                msg.innerText = "password should have atleast 1 special character";
+                return;
+
+            }
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
